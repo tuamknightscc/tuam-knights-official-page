@@ -1,64 +1,377 @@
+/* General Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-blue: #0B1F3A;
+    --accent-green: #008751;
+    --accent-gold: #D4AF37;
+    --bg-light: #f8f9fa;
+    --text-dark: #222222;
+}
+
 body {
-
-font-family: Arial, sans-serif;
-margin:0;
-color:#333;
-
+    background-color: #ffffff;
+    color: var(--text-dark);
+    line-height: 1.6;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
+/* Top Utility Bar */
+.top-bar {
+    background: #061324;
+    color: #e0e0e0;
+    font-size: 0.85rem;
+    padding: 8px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.top-bar-links a {
+    margin-left: 15px;
+    color: #bbb;
+    transition: color 0.2s;
+}
+
+.top-bar-links a:hover {
+    color: var(--accent-gold);
+}
+
+/* Header & Brand */
 header {
-
-background:#0B1F3A;
-color:white;
-padding:40px;
-text-align:center;
-
+    background: var(--primary-blue);
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
+.brand h1 {
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+}
+
+.brand p {
+    font-size: 0.9rem;
+    color: #b0c4de;
+}
+
+/* Navigation Bar */
 nav {
-
-background:#008751;
-padding:15px;
-text-align:center;
-
+    background: var(--accent-green);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
 }
 
-
-nav a {
-
-color:white;
-margin:20px;
-text-decoration:none;
-
+.nav-container {
+    display: flex;
+    justify-content: center;
+    list-style: none;
 }
 
+.nav-item {
+    position: relative;
+}
 
+.nav-item a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-item:hover > a {
+    background: rgba(0, 0, 0, 0.15);
+    color: var(--accent-gold);
+}
+
+/* Dropdown Menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    list-style: none;
+    border-top: 3px solid var(--accent-green);
+}
+
+.dropdown a {
+    color: var(--text-dark);
+    padding: 10px 15px;
+    font-weight: normal;
+}
+
+.dropdown a:hover {
+    background: var(--bg-light);
+    color: var(--accent-green);
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+/* Hero Section */
 .hero {
-
-padding:80px;
-text-align:center;
-background:#f4f4f4;
-
+    background: linear-gradient(rgba(11, 31, 58, 0.75), rgba(11, 31, 58, 0.75)), 
+                url('https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
 }
 
-
-button {
-
-background:#D4AF37;
-border:none;
-padding:15px 30px;
-font-size:18px;
-
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
 }
 
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
 
+.btn {
+    display: inline-block;
+    background: var(--accent-green);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--accent-gold);
+    color: var(--primary-blue);
+    transform: translateY(-2px);
+}
+
+/* Main Layout & Sections */
+section {
+    padding: 60px 8%;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--primary-blue);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* News Section */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.news-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.news-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-tag {
+    font-size: 0.75rem;
+    color: var(--accent-green);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.news-card h3 {
+    color: var(--primary-blue);
+    margin: 8px 0;
+    font-size: 1.2rem;
+}
+
+.news-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Fixtures Table */
+.fixtures-container {
+    overflow-x: auto;
+}
+
+.fixtures-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.fixtures-table th {
+    background: var(--primary-blue);
+    color: white;
+    padding: 14px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.fixtures-table td {
+    padding: 14px;
+    border-bottom: 1px solid #edf2f7;
+    font-size: 0.9rem;
+}
+
+.fixtures-table tr:hover {
+    background-color: #f7fafc;
+}
+
+/* Board Grid */
+.board-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.board-card {
+    background: var(--bg-light);
+    border-left: 4px solid var(--accent-green);
+    padding: 18px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+}
+
+.board-card .role {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--accent-green);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.board-card .name {
+    font-size: 1.05rem;
+    color: var(--primary-blue);
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+/* Club Information Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--bg-light);
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.card h3 {
+    color: var(--accent-green);
+    margin-bottom: 10px;
+}
+
+/* Fundraising */
+.fundraising {
+    background: var(--primary-blue);
+    color: white;
+    text-align: center;
+}
+
+.fundraising .section-title {
+    color: white;
+}
+
+.progress {
+    width: 70%;
+    max-width: 600px;
+    height: 22px;
+    background: #1e3a63;
+    margin: 25px auto 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 45%;
+    height: 100%;
+    background: var(--accent-green);
+}
+
+/* Footer */
 footer {
+    background: #061324;
+    color: #a0aec0;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
 
-background:#0B1F3A;
-color:white;
-text-align:center;
-padding:20px;
+/* Mobile Responsiveness */
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
 
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .dropdown {
+        position: static;
+        box-shadow: none;
+    }
+
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        gap: 5px;
+    }
 }
