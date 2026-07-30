@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuam Knights Cricket Club | County Galway</title>
 
-    <!-- Link to Stylesheet -->
+    <!-- Google Font & CSS Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -25,8 +26,11 @@
     <!-- Header / Brand Banner -->
     <header>
         <div class="brand">
+            <div class="logo-wrapper">
+                <img src="images/logo.png" alt="Tuam Knights CC Logo" class="brand-logo">
+            </div>
             <div>
-                <h1>🏏 Tuam Knights Cricket Club</h1>
+                <h1>Tuam Knights Cricket Club</h1>
                 <p>Affiliated with the Connacht Cricket Union (CCU)</p>
             </div>
         </div>
@@ -56,11 +60,16 @@
         </ul>
     </nav>
 
-    <!-- Hero Banner -->
+    <!-- Hero Banner with Large Crest Display -->
     <div class="hero">
-        <h2>Welcome to Tuam Knights</h2>
-        <p>Building and growing the future of cricket in Tuam & surrounding communities</p>
-        <a class="btn" href="#join">Become a Member</a>
+        <div class="hero-content">
+            <div class="hero-logo-container">
+                <img src="images/logo.png" alt="Tuam Knights CC Emblem" class="hero-logo">
+            </div>
+            <h2>Welcome to Tuam Knights</h2>
+            <p>Honor, Teamwork, and Excellence — Building the future of cricket in Tuam & County Galway</p>
+            <a class="btn" href="#join">Become a Member</a>
+        </div>
     </div>
 
     <!-- About Section -->
@@ -75,7 +84,7 @@
     <!-- Quick Info Cards Section -->
     <section id="info" style="background-color: var(--bg-light);">
         <h2 class="section-title">Club at a Glance</h2>
-        <br>
+        <p class="section-subtitle">Core information about Tuam Knights CC</p>
         <div class="cards">
             <div class="card">
                 <h3>Established</h3>
@@ -144,13 +153,13 @@
                 <tbody>
                     <tr>
                         <td>TBD</td>
-                        <td>Tuam Knights A vs Tuam Knights B</td>
+                        <td>Tuam Knights vs Galway CC</td>
                         <td>CCU Regional League</td>
                         <td>Tuam Ground</td>
                     </tr>
                     <tr>
                         <td>TBD</td>
-                        <td>Tuam Knights A vs Tuam Knights B</td>
+                        <td>Tuam Knights Indoor XI vs Athlone CC</td>
                         <td>Connacht Indoor Cup</td>
                         <td>Indoor Sports Complex</td>
                     </tr>
@@ -211,7 +220,7 @@
     <!-- Join Us CTA -->
     <section id="join" style="text-align: center; background: var(--bg-light);">
         <h2 class="section-title">Join Tuam Knights</h2>
-        <p style="margin-bottom: 20px;">Whether you are a beginner, an experienced player, or a supporter, we welcome everyone to our club.</p>
+        <p style="margin-bottom: 25px;">Whether you are a beginner, an experienced player, or a supporter, we welcome everyone to our club.</p>
         <a class="btn" href="#contact">Get In Touch</a>
     </section>
 
@@ -223,7 +232,7 @@
         <div class="progress">
             <div class="progress-bar"></div>
         </div>
-        <p style="margin-bottom: 20px; font-size: 0.9rem;">Facility Development Fund</p>
+        <p style="margin-bottom: 25px; font-size: 0.9rem; color: #cbd5e1;">Facility Development Fund</p>
 
         <a class="btn" href="#">Donate to the Club</a>
     </section>
@@ -231,9 +240,8 @@
     <!-- Contact Section -->
     <section id="contact" style="text-align: center;">
         <h2 class="section-title">Contact Us</h2>
-        <p><strong>Tuam Knights Cricket Club</strong></p>
-        <br>
-        <p>📧 Email: <a href="mailto:contact.tuamknightscc@gmail.com" style="color: var(--accent-green); font-weight: bold;">contact.tuamknightscc@gmail.com</a></p>
+        <p style="margin-bottom: 15px;"><strong>Tuam Knights Cricket Club</strong></p>
+        <p>📧 Email: <a href="mailto:contact.tuamknightscc@gmail.com" style="color: var(--emerald-green); font-weight: bold;">contact.tuamknightscc@gmail.com</a></p>
         <p>🏏 Affiliated with: Connacht Cricket Union (CCU)</p>
         <p>📍 Location: Tuam, County Galway, Ireland</p>
     </section>
