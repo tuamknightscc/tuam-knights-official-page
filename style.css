@@ -1,0 +1,118 @@
+﻿:root {
+    color-scheme: dark;
+    --background: #22282d;
+    --cream: #f0ecde;
+    --muted: #b6b9b7;
+    --accent: #d4bd89;
+    --line: #ffffff20;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--background);
+    color: var(--cream);
+}
+* { box-sizing: border-box; }
+:root { --header-height: 112px; --menu-height: 57px; }
+main [id] { scroll-margin-top: calc(var(--header-height) + var(--menu-height) + 24px); }
+.section-menu { position: sticky; top: var(--header-height); z-index: 9; display: flex; flex-wrap: nowrap; align-items: stretch; padding: 0 6%; background: #1b2126; border-bottom: 1px solid var(--line); overflow-x: auto; scrollbar-width: thin; scrollbar-color: var(--accent) #1b2126; }
+.section-menu a { position: relative; display: inline-flex; flex: 1 0 auto; align-items: center; justify-content: center; min-height: 56px; padding: 0 24px; border-left: 1px solid var(--line); font-size: 13px; font-weight: 600; letter-spacing: .4px; white-space: nowrap; transition: color .15s, background-color .15s; }
+.section-menu a:last-child { border-right: 1px solid var(--line); }
+.section-menu a:hover { color: var(--accent); background: #ffffff08; }
+.section-menu a[aria-current="location"] { color: var(--accent); background: #d4bd8910; }
+.section-menu a[aria-current="location"]::after { content: ""; position: absolute; bottom: 0; left: 18px; right: 18px; height: 3px; background: var(--accent); }
+.section-menu a:focus-visible { outline-offset: -5px; }
+body { margin: 0; min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; }
+a { color: inherit; text-decoration: none; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 7px; border-radius: 3px; }
+a:hover { color: var(--accent); }
+.icon-definitions { position: absolute; width: 0; height: 0; overflow: hidden; }
+.icon { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+.top-bar { position: sticky; top: 0; z-index: 10; background: var(--background); padding: 0 6%; min-height: 112px; flex-shrink: 0; display: flex; justify-content: space-between; align-items: center; gap: 36px; border-bottom: 1px solid var(--line); }
+.wordmark { font-size: 25px; font-weight: 800; letter-spacing: -1.5px; white-space: nowrap; }
+.wordmark > span:first-child { font-weight: 300; }
+.contact-links { display: flex; align-items: center; justify-content: flex-end; gap: 32px; }
+.contact-link { display: flex; align-items: center; gap: 12px; font-size: 12px; line-height: 1.7; }
+.contact-link > .icon { color: var(--accent); }
+.contact-label { display: block; text-transform: uppercase; font-size: 9px; letter-spacing: 1.8px; color: var(--muted); }
+.social-links { display: flex; gap: 20px; border-left: 1px solid var(--line); padding-left: 28px; }
+.social-links a { display: flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; }
+main { flex: 1; display: grid; align-items: center; }
+.club-introduction { width: 88%; max-width: 1440px; margin: 0 auto; padding: 80px 0 100px; display: grid; grid-template-columns: 1.15fr 1fr; align-items: center; gap: 40px; }
+.eyebrow { margin: 0; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 2.8px; line-height: 1.8; color: var(--muted); }
+.club-copy > .eyebrow { display: flex; align-items: center; gap: 12px; }
+.club-copy > .eyebrow > span { width: 22px; height: 2px; background: var(--accent); }
+h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: clamp(48px, 5.6vw, 88px); letter-spacing: -3px; line-height: 1.06; margin: 28px 0 44px; }
+h1 > span { display: block; color: var(--accent); }
+.affiliations { border-top: 1px solid var(--line); padding-top: 25px; max-width: 440px; }
+.affiliations > p:last-child { font-size: 13px; line-height: 1.8; margin: 10px 0 0; }
+.affiliation-divider { color: var(--accent); padding: 0 14px; }
+.club-crest { max-width: 480px; width: 100%; justify-self: center; }
+.club-crest img { display: block; width: 100%; height: auto; border-radius: 50%; }
+.membership-section, .board-section, .constitution-section, .safeguarding-section { width: 88%; max-width: 1440px; margin: 0 auto; padding: 52px 0 80px; border-top: 1px solid var(--line); min-width: 0; }
+.section-note { margin: 20px 0 0; color: var(--muted); font-size: 16px; }
+.document-links { list-style: none; padding: 0; margin: 32px 0 0; }
+.document-links li { border-bottom: 1px solid var(--line); }
+.document-links a { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 0; line-height: 1.6; }
+.document-action { color: var(--accent); font-size: 13px; white-space: nowrap; }
+.outdoor-notice { margin-top: 28px; display: flex; align-items: baseline; gap: 16px; }
+.outdoor-notice h3 { font-size: 18px; font-weight: 600; margin: 0; }
+.outdoor-notice p { color: var(--muted); font-size: 14px; margin: 0; }
+.board-members { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 48px; margin: 32px 0 0; }
+.board-members > div { padding: 24px 0; border-bottom: 1px solid var(--line); }
+.board-members dt { color: var(--accent); font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.8px; line-height: 1.8; }
+.board-members dd { margin: 9px 0 0; font-size: 18px; line-height: 1.5; overflow-wrap: break-word; }
+.membership-heading { display: flex; align-items: center; justify-content: space-between; gap: 28px; margin-bottom: 32px; }
+h2 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(30px, 3vw, 44px); font-weight: 400; line-height: 1.2; margin: 12px 0 0; }
+h2 span { color: var(--accent); }
+.membership-button { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 48px; padding: 12px 20px; background: var(--accent); color: var(--background); font-size: 14px; font-weight: 600; white-space: nowrap; }
+.membership-button:hover { background: var(--cream); color: var(--background); }
+.training-table-wrapper { overflow-x: auto; }
+.training-table-wrapper:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+table { width: 100%; border-collapse: collapse; text-align: left; font-size: 14px; line-height: 1.7; }
+caption { text-align: left; color: var(--cream); font-size: 18px; font-weight: 600; padding-bottom: 20px; }
+th, td { padding: 18px 20px; border-bottom: 1px solid var(--line); vertical-align: top; }
+thead th { color: var(--accent); background: #ffffff05; text-transform: uppercase; font-size: 10px; letter-spacing: 1.8px; }
+tbody td { color: var(--muted); }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); padding: 23px 0; margin: 0 6%; color: var(--muted); font-size: 10px; letter-spacing: 1px; }
+@media (min-width: 1600px) { .club-introduction { min-height: 700px; } }
+@media (max-width: 1000px) {
+    .top-bar { gap: 20px; }
+    .contact-links { gap: 20px; }
+    .contact-link { font-size: 11px; gap: 8px; }
+    .social-links { padding-left: 18px; gap: 16px; }
+    .club-introduction { gap: 25px; }
+    h1 { letter-spacing: -2px; }
+}
+@media (min-width: 761px) and (max-width: 1150px) {
+    .membership-link { width: 44px; min-height: 44px; justify-content: center; }
+    .membership-link > span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (max-width: 760px) {
+    :root { --header-height: 88px; }
+    .section-menu a { min-height: 52px; padding: 0 18px; font-size: 12px; }
+    .top-bar { padding: 12px 6%; gap: 16px; min-height: 88px; }
+    .wordmark { font-size: 23px; }
+    .contact-links { gap: 4px; }
+    .contact-link { width: 44px; min-height: 44px; justify-content: center; }
+    .contact-link > span { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+    .social-links { border: 0; padding: 0; gap: 4px; }
+    .club-introduction { grid-template-columns: 1fr; padding: 48px 0; gap: 38px; }
+    .club-copy { text-align: center; }
+    .club-copy > .eyebrow { justify-content: center; font-size: 9px; letter-spacing: 2px; }
+    h1 { font-size: clamp(43px, 10vw, 72px); margin: 23px 0 30px; }
+    .affiliations { margin: auto; }
+    .affiliations > p:last-child { font-size: 12px; }
+    .affiliation-divider { padding: 0 8px; }
+    .club-crest { width: 75%; max-width: 320px; }
+    footer { font-size: 9px; letter-spacing: .4px; }
+    .membership-section, .board-section, .constitution-section, .safeguarding-section { padding: 36px 0 48px; }
+    .document-links a { align-items: flex-start; flex-direction: column; gap: 8px; }
+    .board-members { grid-template-columns: 1fr; }
+    .membership-heading { align-items: flex-start; flex-direction: column; gap: 22px; }
+    table { min-width: 600px; }
+    th, td { padding: 14px 12px; }
+}
+@media (max-width: 380px) {
+    :root { --header-height: 100px; }
+    .top-bar { flex-wrap: wrap; justify-content: center; gap: 4px; padding-top: 10px; padding-bottom: 10px; }
+    .wordmark { width: 100%; text-align: center; }
+}
