@@ -40,7 +40,7 @@
         </nav>
     </header>
     <nav class="section-menu" aria-label="Page sections">
-        <a href="#home">Home</a>
+        <a href="#home" aria-current="location">Home</a>
         <a href="#membership">Membership</a>
         <a href="#training">Training</a>
         <a href="#constitution">Constitution</a>
@@ -121,5 +121,46 @@
         </section>
     </main>
     <footer><span>Tuam Knights Cricket Club</span><span>Tuam · County Galway</span></footer>
+    <script>
+        const header = document.querySelector('.top-bar');
+        const menu = document.querySelector('.section-menu');
+        const menuLinks = [...menu.querySelectorAll('a')];
+        const targets = menuLinks.map(link => document.querySelector(link.getAttribute('href')));
+
+        function updateNavigation() {
+            const offset = header.getBoundingClientRect().height + menu.getBoundingClientRect().height;
+            let current = 0;
+            targets.forEach((target, index) => {
+                if (target.getBoundingClientRect().top <= offset + 25) current = index;
+            });
+            menuLinks.forEach((link, index) => {
+                if (index === current) link.setAttribute('aria-current', 'location');
+                else link.removeAttribute('aria-current');
+            });
+        }
+
+        function updateNavigationSize() {
+            document.documentElement.style.setProperty('--header-height', `${header.getBoundingClientRect().height}px`);
+            document.documentElement.style.setProperty('--menu-height', `${menu.getBoundingClientRect().height}px`);
+            updateNavigation();
+        }
+
+        let navigationFrame;
+        window.addEventListener('scroll', () => {
+            if (navigationFrame) return;
+            navigationFrame = requestAnimationFrame(() => {
+                updateNavigation();
+                navigationFrame = null;
+            });
+        }, { passive: true });
+        window.addEventListener('resize', updateNavigationSize);
+        if ('ResizeObserver' in window) {
+            const navigationObserver = new ResizeObserver(updateNavigationSize);
+            navigationObserver.observe(header);
+            navigationObserver.observe(menu);
+        }
+        window.addEventListener('load', updateNavigationSize);
+        updateNavigationSize();
+    </script>
 </body>
 </html>
