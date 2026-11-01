@@ -1,482 +1,55 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuam Knights Cricket Club | County Galway</title>
-    <meta name="description" content="Official website of Tuam Knights Cricket Club in County Galway, Ireland. Fixtures, memberships, net bookings, and live match center.">
-
-    <!-- Structured Data (SEO Schema) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SportsClub",
-      "name": "Tuam Knights Cricket Club",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Tuam",
-        "addressRegion": "County Galway",
-        "addressCountry": "IE"
-      },
-      "email": "contact.tuamknightscc@gmail.com",
-      "sameAs": [
-        "https://www.facebook.com/tuamknightscc",
-        "https://www.instagram.com/tuamknightscc",
-        "https://x.com/tuamknightscc"
-      ]
-    }
-    </script>
-
-    <!-- Google Fonts & Font Awesome Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="theme-color" content="#22282d">
+    <meta name="description" content="Tuam Knights Cricket Club, affiliated with Connacht Cricket Union and Cricket Ireland. Find our indoor location, get in touch, and follow the club.">
+    <title>Tuam Knights Cricket Club</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <symbol id="location" viewBox="0 0 24 24"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+        <symbol id="email" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
+        <symbol id="instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+        <symbol id="youtube" viewBox="0 0 24 24"><path d="M21 7.5a3 3 0 0 0-2-2C17 5 12 5 12 5s-5 0-7 .5a3 3 0 0 0-2 2 25 25 0 0 0 0 9 3 3 0 0 0 2 2c2 .5 7 .5 7 .5s5 0 7-.5a3 3 0 0 0 2-2 25 25 0 0 0 0-9Z"/><path d="m10 9 5 3-5 3Z"/></symbol>
+    </svg>
 
-    <!-- Utility Top Bar with Social Media Icons -->
-    <div class="top-bar">
-        <div>📍 Tuam, County Galway, Ireland | ✉️ contact.tuamknightscc@gmail.com</div>
-        <div class="top-bar-links">
-            <!-- Social Media Handles -->
-            <span class="social-icons">
-                <a href="https://www.facebook.com/tuamknightscc" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/tuamknightscc" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://wa.me/353870000000" target="_blank" aria-label="WhatsApp Community"><i class="fa-brands fa-whatsapp"></i></a>
-            </span>
-            <span class="divider">|</span>
-            <a href="#match-center"><i class="fa-solid fa-tower-broadcast"></i> Live Scores</a>
-            <a href="#register"><i class="fa-solid fa-user-plus"></i> Join Us</a>
-            <a href="#dashboard"><i class="fa-solid fa-user-gear"></i> Portal</a>
-        </div>
-    </div>
-
-    <!-- Header / Brand Banner -->
-    <header>
-        <div class="brand">
-            <div class="logo-wrapper">
-                <img src="images/logo-old.png" alt="Tuam Knights CC Logo" class="brand-logo">
+    <header class="top-bar">
+        <a class="wordmark" href="./" aria-label="Tuam Knights Cricket Club home">TK<span>CC</span><span class="wordmark-dot" aria-hidden="true">.</span></a>
+        <nav class="contact-links" aria-label="Contact and social media">
+            <a class="contact-link" href="https://www.google.com/maps/place/St+pats+Gym/@53.5125178,-8.8477476,17z/data=!3m1!4b1!4m6!3m5!1s0x485bf6b3fa173b69:0x1603b2213dcd50ce!8m2!3d53.5125146!4d-8.8451727!16s%2Fg%2F11f404q7t8?entry=ttu&amp;g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Indoor location: St Pats Gym, Tuam (opens in a new tab)">
+                <svg class="icon" aria-hidden="true"><use href="#location"/></svg>
+                <span><span class="contact-label">Indoor location</span>St Pats Gym, Tuam</span>
+            </a>
+            <a class="contact-link email-link" href="mailto:contact.tuamknightscc@gmail.com">
+                <svg class="icon" aria-hidden="true"><use href="#email"/></svg>
+                <span><span class="contact-label">Email us</span>contact.tuamknightscc@gmail.com</span>
+            </a>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@TuamKnightsCricketClub" target="_blank" rel="noopener noreferrer" aria-label="Tuam Knights on YouTube (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#youtube"/></svg></a>
+                <a href="https://www.instagram.com/tuamknightscricketclub" target="_blank" rel="noopener noreferrer" aria-label="Tuam Knights on Instagram (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#instagram"/></svg></a>
             </div>
-            <div>
-                <h1>Tuam Knights Cricket Club</h1>
-                <p>Affiliated with the Connacht Cricket Union (CCU)</p>
-            </div>
-        </div>
-        <div class="header-actions">
-            <a href="#register" class="btn btn-sm">Pay Membership</a>
-        </div>
+        </nav>
     </header>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <ul class="nav-container">
-            <li class="nav-item"><a href="#">Home</a></li>
-            <li class="nav-item">
-                <a href="#match-center">Match Center ▾</a>
-                <ul class="dropdown">
-                    <li><a href="#match-center">Live Ball-by-Ball</a></li>
-                    <li><a href="#fixtures-stats">Fixtures & Leaderboards</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#members">Members & Squads ▾</a>
-                <ul class="dropdown">
-                    <li><a href="#register">Digital Registration</a></li>
-                    <li><a href="#dashboard">Player Dashboard</a></li>
-                    <li><a href="#captains-portal">Captains & Selection</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#clubhouse">Clubhouse ▾</a>
-                <ul class="dropdown">
-                    <li><a href="#net-booking">Net & Facility Booking</a></li>
-                    <li><a href="#shop">E-Commerce Shop</a></li>
-                    <li><a href="#board">Governance & Committee</a></li>
-                </ul>
-            </li>
-            <li class="nav-item"><a href="#sponsors">Sponsors</a></li>
-            <li class="nav-item"><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Alert / Broadcast Engine Banner -->
-    <div class="alert-bar">
-        <i class="fa-solid fa-bullhorn"></i> <strong>PITCH ALERT:</strong> Weekend fixtures proceeding as scheduled. Follow live updates on Instagram & Facebook!
-    </div>
-
-    <!-- Hero Banner -->
-    <div class="hero">
-        <div class="hero-content">
-            <div class="hero-logo-container">
-                <img src="images/logo.png" alt="Tuam Knights CC Emblem" class="hero-logo">
-            </div>
-            <h2>Welcome to Tuam Knights</h2>
-            <p>Honor, Teamwork, and Excellence — Building the future of cricket in Tuam & County Galway</p>
-            <div class="hero-btns">
-                <a class="btn" href="#register">Register / Renew Membership</a>
-                <a class="btn btn-outline" href="#match-center">View Live Match Center</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Live Match Center Widget -->
-    <section id="match-center" class="dark-section">
-        <h2 class="section-title light-title">Live Match Center</h2>
-        <p class="section-subtitle light-subtitle">Real-time ball-by-ball updates and league feeds</p>
-
-        <div class="match-widget">
-            <div class="match-header">
-                <span class="badge badge-live"><i class="fa-solid fa-circle"></i> LIVE</span>
-                <span>CCU Premier Division — 35 Overs Match</span>
-            </div>
-            <div class="match-scoreboard">
-                <div class="team">
-                    <h3>Tuam Knights 1st XI</h3>
-                    <div class="score">184/4 <small>(28.2 Overs)</small></div>
-                </div>
-                <div class="vs">VS</div>
-                <div class="team">
-                    <h3>Galway CC</h3>
-                    <div class="score">Yet to Bat</div>
+    <main>
+        <section class="club-introduction" aria-labelledby="club-name">
+            <div class="club-copy">
+                <p class="eyebrow"><span aria-hidden="true"></span> Tuam, County Galway, Ireland</p>
+                <h1 id="club-name">Tuam Knights<span>Cricket Club</span></h1>
+                <div class="affiliations">
+                    <p class="eyebrow">Affiliated with</p>
+                    <p>Connacht Cricket Union<span class="affiliation-divider" aria-hidden="true">/</span>Cricket Ireland</p>
                 </div>
             </div>
-            <div class="recent-balls">
-                <span>Recent: </span>
-                <span class="ball ball-4">4</span>
-                <span class="ball">1</span>
-                <span class="ball ball-6">6</span>
-                <span class="ball">0</span>
-                <span class="ball ball-w">W</span>
-                <span class="ball">2</span>
+            <div class="club-crest">
+                <img src="images/logo.png" alt="Tuam Knights Cricket Club crest: an armoured knight holding a cricket bat, established 2022" width="1024" height="1045" fetchpriority="high">
             </div>
-            <div class="match-embed-placeholder">
-                <p><i class="fa-solid fa-plug"></i> Connected to Play-Cricket / PlayHQ Live Scoring API Integration</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Interactive Statistics & Fixtures -->
-    <section id="fixtures-stats" style="background: var(--bg-light);">
-        <h2 class="section-title">Fixtures & Player Leaderboards</h2>
-        <p class="section-subtitle">Filter schedule by team and track top season performers</p>
-
-        <div class="filter-bar">
-            <button class="filter-btn active">All Teams</button>
-            <button class="filter-btn">Seniors 1st XI</button>
-            <button class="filter-btn">Women's XI</button>
-            <button class="filter-btn">Juniors</button>
-        </div>
-
-        <div class="stats-grid">
-            <div class="stats-card">
-                <h3>Upcoming Schedule</h3>
-                <table class="fixtures-table">
-                    <thead>
-                        <tr>
-                            <th>Date</th>
-                            <th>Fixture</th>
-                            <th>Team</th>
-                            <th>Venue</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Aug 15</td>
-                            <td>Tuam Knights vs Galway CC</td>
-                            <td>Seniors</td>
-                            <td>Tuam Pitch</td>
-                        </tr>
-                        <tr>
-                            <td>Aug 22</td>
-                            <td>Tuam Knights vs Athlone CC</td>
-                            <td>Women's</td>
-                            <td>Away</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="stats-card">
-                <h3>Season Leaderboards</h3>
-                <div class="tabs">
-                    <button class="tab-btn active">Batting Runs</button>
-                    <button class="tab-btn">Bowling Wickets</button>
-                </div>
-                <ul class="leaderboard-list">
-                    <li><span>1. P. Patel</span> <strong>342 runs</strong></li>
-                    <li><span>2. S. Ravichandran</span> <strong>289 runs</strong></li>
-                    <li><span>3. N. Lamba</span> <strong>210 runs</strong></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Digital Registration & Fee Payments -->
-    <section id="register">
-        <h2 class="section-title">Member Digital Registration</h2>
-        <p class="section-subtitle">Complete signup with encrypted payment & GDPR safeguarding compliance</p>
-
-        <div class="form-container">
-            <div class="form-steps">
-                <div class="step active">1. Personal Data</div>
-                <div class="step">2. Medical & Emergency</div>
-                <div class="step">3. Fee Tier & Payment</div>
-            </div>
-
-            <form class="multi-step-form" onsubmit="event.preventDefault();">
-                <div class="form-group-grid">
-                    <div class="form-group">
-                        <label>Full Name *</label>
-                        <input type="text" placeholder="John Doe" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Email Address *</label>
-                        <input type="email" placeholder="john@example.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Emergency Contact Name *</label>
-                        <input type="text" placeholder="Contact Person" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Emergency Phone *</label>
-                        <input type="tel" placeholder="+353 87 000 0000" required>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label>Medical Disclosures & Allergies</label>
-                    <textarea rows="2" placeholder="List any medical conditions or allergies..."></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label>Membership Tier Billing *</label>
-                    <select required>
-                        <option value="">Select Tier</option>
-                        <option value="senior">Senior Playing Member (€120 / yr)</option>
-                        <option value="junior">Junior / Student Member (€60 / yr)</option>
-                        <option value="social">Social Member (€40 / yr)</option>
-                        <option value="vp">VP Membership (€200 / yr)</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label>Payment Structure Options</label>
-                    <div class="radio-group">
-                        <label><input type="radio" name="payment_opt" checked> Single Annual Payment</label>
-                        <label><input type="radio" name="payment_opt"> 4x Monthly Installments</label>
-                    </div>
-                </div>
-
-                <div class="gdpr-box">
-                    <label>
-                        <input type="checkbox" required>
-                        I consent to the store of personal data and digital child safeguarding policy under strict GDPR compliance guidelines.
-                    </label>
-                </div>
-
-                <button class="btn btn-full" type="submit">Proceed to Secure Stripe Checkout</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Player & Captain Portals -->
-    <section id="dashboard" style="background: var(--bg-light);">
-        <h2 class="section-title">Player & Captain Command Center</h2>
-        <p class="section-subtitle">Manage match availability, digital team sheets, and fee collection</p>
-
-        <div class="portal-grid">
-            <div class="portal-card">
-                <h3><i class="fa-solid fa-user"></i> Player Availability Portal</h3>
-                <p>State your weekly fixture availability:</p>
-                <div class="fixture-rsvp">
-                    <div>
-                        <strong>vs Galway CC (Aug 15)</strong>
-                        <br><small>Venue: Home Pitch</small>
-                    </div>
-                    <div class="rsvp-buttons">
-                        <button class="btn-rsvp btn-avail"><i class="fa-solid fa-check"></i> Available</button>
-                        <button class="btn-rsvp btn-away"><i class="fa-solid fa-plane"></i> Away</button>
-                        <button class="btn-rsvp btn-inj"><i class="fa-solid fa-bandage"></i> Injured</button>
-                    </div>
-                </div>
-            </div>
-
-            <div id="captains-portal" class="portal-card">
-                <h3><i class="fa-solid fa-clipboard-user"></i> Digital Team Sheets</h3>
-                <p>Select matchday XI and auto-notify team via Push/SMS/WhatsApp:</p>
-                <ul class="selection-list">
-                    <li><label><input type="checkbox" checked> S. Ravichandran (Capt)</label> <span class="badge-status paid">Fee Paid</span></li>
-                    <li><label><input type="checkbox" checked> P. Patel (Wkt)</label> <span class="badge-status paid">Fee Paid</span></li>
-                    <li><label><input type="checkbox" checked> N. Lamba</label> <span class="badge-status pending">Match Fee Due</span></li>
-                </ul>
-                <button class="btn btn-sm" style="margin-top: 15px;"><i class="fa-solid fa-paper-plane"></i> Publish Game-Day XI & Notify</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Facility & Net Booking Calendar -->
-    <section id="net-booking">
-        <h2 class="section-title">Facility & Net Booking</h2>
-        <p class="section-subtitle">Reserve practice lanes and Clubhouse event spaces online</p>
-
-        <div class="booking-container">
-            <div class="form-group-grid">
-                <div class="form-group">
-                    <label>Facility Type</label>
-                    <select>
-                        <option>Outdoor Turf Net Lane 1</option>
-                        <option>Outdoor Turf Net Lane 2</option>
-                        <option>Indoor Training Pitch</option>
-                        <option>Clubhouse Main Hall Event Hire</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Select Date</label>
-                    <input type="date">
-                </div>
-                <div class="form-group">
-                    <label>Time Slot</label>
-                    <select>
-                        <option>10:00 AM - 11:30 AM</option>
-                        <option>02:00 PM - 03:30 PM</option>
-                        <option>06:00 PM - 07:30 PM</option>
-                    </select>
-                </div>
-            </div>
-            <button class="btn">Confirm Booking Slot</button>
-        </div>
-    </section>
-
-    <!-- E-Commerce Shop -->
-    <section id="shop" style="background: var(--bg-light);">
-        <h2 class="section-title">Tuam Knights Official E-Shop</h2>
-        <p class="section-subtitle">Order playing whites, training gear, and club merchandise</p>
-
-        <div class="shop-grid">
-            <div class="shop-card">
-                <div class="shop-img-placeholder"><i class="fa-solid fa-shirt"></i></div>
-                <h3>Official Playing Whites Kit</h3>
-                <p class="price">€45.00</p>
-                <button class="btn btn-sm">Add to Cart</button>
-            </div>
-            <div class="shop-card">
-                <div class="shop-img-placeholder"><i class="fa-solid fa-vest"></i></div>
-                <h3>Training Hoodie & Tracksuit</h3>
-                <p class="price">€55.00</p>
-                <button class="btn btn-sm">Add to Cart</button>
-            </div>
-            <div class="shop-card">
-                <div class="shop-img-placeholder"><i class="fa-solid fa-hat-cowboy"></i></div>
-                <h3>Club Crested Baggy Cap</h3>
-                <p class="price">€20.00</p>
-                <button class="btn btn-sm">Add to Cart</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sponsor Showcase -->
-    <section id="sponsors">
-        <h2 class="section-title">Our Valued Sponsors</h2>
-        <p class="section-subtitle">Proud partners supporting local cricket in County Galway</p>
-
-        <div class="sponsor-tiers">
-            <div class="sponsor-tier gold">
-                <h4>Gold Tier Sponsors</h4>
-                <div class="sponsor-logos">
-                    <div class="sponsor-box">Partner Enterprise Logo</div>
-                    <div class="sponsor-box">Galway Sports Partner</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Executive Board & Roles -->
-    <section id="board" style="background: var(--bg-light);">
-        <h2 class="section-title">Executive Board & Governance 2026</h2>
-        <p class="section-subtitle">Granular role permissions and club management team</p>
-
-        <div class="board-grid">
-            <div class="board-card">
-                <div class="role">President</div>
-                <div class="name">Sooriya Ravichandran</div>
-            </div>
-            <div class="board-card">
-                <div class="role">Vice President</div>
-                <div class="name">Nupur Anup Lamba</div>
-            </div>
-            <div class="board-card">
-                <div class="role">Secretary</div>
-                <div class="name">Parthkumar Patel</div>
-            </div>
-            <div class="board-card">
-                <div class="role">Treasurer / Admin</div>
-                <div class="name">Rohit B Shettigar</div>
-            </div>
-            <div class="board-card">
-                <div class="role">Safeguarding Officer</div>
-                <div class="name">Deval Dixit</div>
-            </div>
-            <div class="board-card">
-                <div class="role">Head Coach</div>
-                <div class="name">Subramanya Ramnathpur</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact & Social Links Section -->
-    <section id="contact" style="text-align: center;">
-        <h2 class="section-title">Connect & Stay Updated</h2>
-        <p class="section-subtitle">Follow Tuam Knights CC across our official social channels</p>
-
-        <!-- Social Media Cards -->
-        <div class="social-cards-grid">
-            <a href="https://www.facebook.com/tuamknightscc" target="_blank" class="social-card facebook">
-                <i class="fa-brands fa-facebook"></i>
-                <span>Facebook</span>
-                <small>@tuamknightscc</small>
-            </a>
-            <a href="https://www.instagram.com/tuamknightscc" target="_blank" class="social-card instagram">
-                <i class="fa-brands fa-instagram"></i>
-                <span>Instagram</span>
-                <small>@tuamknightscc</small>
-            </a>
-            <a href="https://x.com/tuamknightscc" target="_blank" class="social-card twitter">
-                <i class="fa-brands fa-x-twitter"></i>
-                <span>X / Twitter</span>
-                <small>@tuamknightscc</small>
-            </a>
-            <a href="https://wa.me/353870000000" target="_blank" class="social-card whatsapp">
-                <i class="fa-brands fa-whatsapp"></i>
-                <span>WhatsApp</span>
-                <small>Member Group</small>
-            </a>
-        </div>
-
-        <div class="newsletter-sub" style="margin-top: 35px;">
-            <input type="email" placeholder="Enter your email address">
-            <button class="btn">Subscribe Alerts</button>
-        </div>
-
-        <div style="margin-top: 30px;">
-            <p><strong>Tuam Knights Cricket Club</strong></p>
-            <p>📧 Email: <a href="mailto:contact.tuamknightscc@gmail.com" style="color: var(--emerald-green); font-weight: bold;">contact.tuamknightscc@gmail.com</a></p>
-            <p>🏏 Affiliated with: Connacht Cricket Union (CCU)</p>
-            <p>📍 Location: Tuam, County Galway, Ireland</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-socials" style="margin-bottom: 12px;">
-            <a href="https://www.facebook.com/tuamknightscc" target="_blank" style="margin: 0 8px;"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/tuamknightscc" target="_blank" style="margin: 0 8px;"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://x.com/tuamknightscc" target="_blank" style="margin: 0 8px;"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://wa.me/353870000000" target="_blank" style="margin: 0 8px;"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
-        <p>© 2026 Tuam Knights Cricket Club — Growing Cricket Together | GDPR & Mobile-First Compliant</p>
-    </footer>
-
+        </section>
+    </main>
+    <footer><span>Tuam Knights Cricket Club</span><span>Tuam · County Galway</span></footer>
 </body>
 </html>
